@@ -21,7 +21,6 @@ Created By: TheTechHacker
 SUBSCRIBE: https://www.youtube.com/channel/UCKAmv8p_TRvUNrJlfiB8qBQ
 
 """
-
 print "\033[1;32m"
 
 os.system("clear")
@@ -39,6 +38,7 @@ If You Use 1000 bytes or higher
 You're Internet might get a bit slow
 =======================================
 """
+
 try:
     size = input("bytes> ")
     attack = random._urandom(size)
@@ -56,6 +56,9 @@ except NameError:
 except KeyboardInterrupt:
     print " "
     exit("\033[1;34m [-]Canceled By User \033[1;m")
+except ImportError:
+    print " "
+    exit("\033[1;34m [-]Install python 2.7.15")
 
 while True:
     try:
@@ -64,5 +67,7 @@ while True:
     except KeyboardInterrupt:
         print " "
         exit("\033[1;34m [-]Canceled By User \033[1;m")
-
+    except ImportError:
+        print " "
+        exit("\033[1;34m [-]Install python 2.7.15")
 print "\033[1;m"
