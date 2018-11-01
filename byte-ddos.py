@@ -34,7 +34,7 @@ print """
 =======================================
      Created By: TheTechHacker
 =======================================
-If You Use 1000 bytes or higher 
+If You Use too much bytes 
 You're Internet might get a bit slow
 =======================================
 """
