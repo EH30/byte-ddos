@@ -39,6 +39,7 @@ You're Internet might get a bit slow
 =======================================
 """
 
+
 try:
     size = input("bytes> ")
     attack = random._urandom(size)
@@ -70,4 +71,3 @@ while True:
     except ImportError:
         print " "
         exit("\033[1;34m [-]Install python 2.7.15")
-print "\033[1;m"
