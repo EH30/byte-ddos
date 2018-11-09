@@ -2,7 +2,7 @@ import sys
 import os
 import random
 import socket
-
+from sys import platform
 
 
 
@@ -15,15 +15,29 @@ import socket
 ########################################
 
 
+
+
 """
 Created By: TheTechHacker
 ==========================
 SUBSCRIBE: https://www.youtube.com/channel/UCKAmv8p_TRvUNrJlfiB8qBQ
 
 """
+
+
+
+if platform == "linux" or platform == "linux2":
+    os.system("clear")
+elif platform == "darwin":
+    os.system("clear")
+    print "This Script Works Best on Kali linux"
+elif platform == "win32":
+    os.system("cls")
+else:
+    print "\033[1;34m [-]Unknown System Detected \033[1;m"
+
 print "\033[1;32m"
 
-os.system("clear")
 connect = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 print """
      _      _      _
@@ -38,6 +52,7 @@ If You Use too much bytes
 You're Internet might get a bit slow
 =======================================
 """
+
 
 
 try:
@@ -60,6 +75,7 @@ except KeyboardInterrupt:
 except ImportError:
     print " "
     exit("\033[1;34m [-]Install python 2.7.15")
+
 
 while True:
     try:
